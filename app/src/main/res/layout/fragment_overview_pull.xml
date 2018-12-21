@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="whc.com.whc_wallet.SplashActivity">
+
+    <RelativeLayout
+        android:id="@+id/noMsgLy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="693px"
+            android:layout_height="594px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="358px"
+            android:background="@drawable/pic_nomessage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#182C4F"
+            android:textSize="48px"
+            android:layout_height="wrap_content"
+            android:text="@string/no_msg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="684px"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/netErrorLy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="693px"
+            android:layout_height="594px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="338px"
+            android:background="@drawable/net_error_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#182C4F"
+            android:textSize="38px"
+            android:layout_height="wrap_content"
+            android:text="@string/net_error_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="704px"
+            />
+
+        <Button
+            android:id="@+id/retryNetBtn"
+            style="@style/normalBtn"
+            android:layout_marginTop="990px"
+            android:text="@string/retry_fetch" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contentLyBase"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+            android:layout_marginTop="24px"
+            android:id="@+id/overview_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView>
+
+    </LinearLayout>
+
+</FrameLayout>

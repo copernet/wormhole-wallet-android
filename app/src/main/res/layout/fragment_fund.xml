@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="192px"
+        android:background="#ffffffff"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleBarTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/fund"
+            android:textColor="#ff030303"
+            android:textSize="60px" />
+
+
+        <TextView
+            android:id="@+id/titleBarRightTv"
+            android:layout_width="wrap_content"
+            android:layout_height="72px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="42px"
+            android:text="@string/send_all"
+            android:textColor="#4A4A4A"
+            android:textSize="54px" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/emptyView"
+        layout="@layout/fund_empty"
+        android:visibility="gone"></include>
+
+
+    <RelativeLayout
+        android:id="@+id/contentLy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fund_recycler_view"
+            android:layout_marginTop="24px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></android.support.v7.widget.RecyclerView>
+
+        <ImageButton
+            android:id="@+id/addFundFloatBtn"
+            android:background="@drawable/asset_icon_add"
+            android:layout_width="160px"
+            android:layout_marginTop="1298px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="90px"
+            android:layout_height="160px"></ImageButton>
+
+
+    </RelativeLayout>
+</LinearLayout>

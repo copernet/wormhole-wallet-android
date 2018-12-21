@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="whc.com.whc_wallet.util.Converters" />
+
+        <variable
+            name="joinFund"
+            type="wormhole.net.request.JoinFund" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="whc.com.whc_wallet.SplashActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="242px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_padding"
+                android:text="@string/percent_whc"
+                android:textColor="#53627C"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="544px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:ellipsize="middle"
+                android:text="@{`` + joinFund.amount_every_whc}"
+                android:textColor="#8A94A6"
+                android:textSize="42px"
+                tools:text="hhhtu16jsdjfidj…iadusoh980" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="34px"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48px"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/tipIv"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_marginLeft="60px"
+                        android:background="@drawable/main_icon_dollar" />
+
+                    <TextView
+                        style="@style/tipTextV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24px"
+                        android:gravity="center_vertical"
+                        android:text="@string/pay_amount_no_colon"
+                        android:textSize="42px" />
+                </LinearLayout>
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    style="@style/CustomerEditText"
+                    android:layout_marginTop="18px"
+                    android:text="@={joinFund.amount_to_transfer}" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48px"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/tipIv"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_marginLeft="60px"
+                        android:background="@drawable/main_icon_miner_fee" />
+
+                    <TextView
+                        style="@style/tipTextV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24px"
+                        android:gravity="center_vertical"
+                        android:text="@string/miner_fee"
+                        android:textSize="42px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/feeEt"
+                    style="@style/CustomerEditText"
+                    android:layout_marginTop="18px"
+                    android:text="@={joinFund.fee}" />
+            </LinearLayout>
+
+            <whc.com.whc_wallet.view.MinerFeeView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"></whc.com.whc_wallet.view.MinerFeeView>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/confirmBtn"
+            style="@style/normalBtn"
+            android:layout_marginTop="33px"
+            android:text="@string/confirm" />
+
+    </LinearLayout>
+</layout>

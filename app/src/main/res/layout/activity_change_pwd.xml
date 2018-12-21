@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="whc.com.whc_wallet.SplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="258px"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/lockIv"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginLeft="60px"
+                android:background="@drawable/create_icons_password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:gravity="center_vertical"
+                android:text="@string/set_password"
+                android:textSize="42px" />
+        </LinearLayout>
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/passWordEt"
+            style="@style/CustomerEditText"
+            android:hint="@string/password_hint"
+            android:layout_marginTop="18px"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48px"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginLeft="60px"
+                style="@style/tipIv"
+                android:background="@drawable/create_icons_password2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:gravity="center_vertical"
+                style="@style/tipTextV"
+                android:text="@string/repeat_password"
+                android:textSize="42px" />
+        </LinearLayout>
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/repeatPwdEt"
+            style="@style/CustomerEditText"
+            android:layout_marginTop="18px" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirmChange"
+        style="@style/normalBtn"
+        android:layout_marginTop="141px"
+        android:text="@string/confirm" />
+</LinearLayout>
+
+

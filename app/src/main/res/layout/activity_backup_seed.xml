@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="whc.com.whc_wallet.SplashActivity">
+
+    <TextView
+        android:layout_marginTop="336px"
+        android:layout_width="960px"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/backup_tip"
+        android:textColor="#ff53627c"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/showSeedTv"
+        android:layout_marginTop="522px"
+        android:textColor="#0C66FF"
+        tools:text="let it be"
+        android:textSize="62px"
+        android:paddingRight="90px"
+        android:paddingLeft="90px"
+        android:paddingTop="80px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/create_card_bg"
+        android:layout_width="1020px"
+        android:layout_height="567px" />
+
+    <Button
+        style="@style/normalBtn"
+        android:text="@string/i_remember"
+        android:layout_marginTop="1164px"
+        />
+
+
+
+</RelativeLayout>

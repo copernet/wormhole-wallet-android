@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="whc.com.whc_wallet.SplashActivity">
+
+    <ImageView
+        android:layout_width="693px"
+        android:layout_height="594px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550px"
+        android:background="@drawable/asset_pic" />
+
+
+    <Button
+        android:id="@+id/addFund"
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1236px"
+        android:background="@drawable/asset_icon_add"
+        />
+
+</RelativeLayout>

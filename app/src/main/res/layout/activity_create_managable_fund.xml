@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="whc.com.whc_wallet.util.Converters" />
+
+        <variable
+            name="crowd"
+            type="wormhole.net.request.CreateCrowd" />
+    </data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="whc.com.whc_wallet.SplashActivity">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="whc.com.whc_wallet.SplashActivity">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_padding"
+                android:layout_marginTop="240px"
+                android:text="@string/send_addr"
+                android:textColor="#53627C"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="544px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="298px"
+                android:layout_marginTop="240px"
+                android:ellipsize="middle"
+                android:textColor="#8A94A6"
+                android:singleLine="true"
+                android:text="@{crowd.transaction_from}"
+                android:textSize="42px"
+                tools:text="hhhtu16jsdjfidj…iadusoh980" />
+
+            <LinearLayout
+                android:id="@+id/inputParentLy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="348px"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48px"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/nameIv"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="60px"
+                            android:background="@drawable/create_icons_wallet_name" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24px"
+                            android:gravity="center_vertical"
+                            android:text="@string/name"
+                            android:textSize="42px" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:text="@={crowd.property_name}"
+                        style="@style/CustomerEditText"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="18px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48px"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/lockIv"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="60px"
+                            android:background="@drawable/assert_icon_first" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24px"
+                            android:gravity="center_vertical"
+                            android:text="@string/first_catogory"
+                            android:textSize="42px" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="60px"
+                        android:layout_marginLeft="60px"
+                        android:layout_height="144px"
+                        android:layout_marginTop="10px"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48px"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/tipIv"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="60px"
+                            android:background="@drawable/assert_icon_second" />
+
+                        <TextView
+                            style="@style/tipTextV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24px"
+                            android:gravity="center_vertical"
+                            android:text="@string/second_catogory"
+                            android:textSize="42px" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/spinnerChild"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="60px"
+                        android:layout_marginLeft="60px"
+                        android:layout_height="144px"
+                        android:layout_marginTop="10px"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48px"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/tipIv"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="60px"
+                            android:background="@drawable/assert_icon_link" />
+
+                        <TextView
+                            style="@style/tipTextV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24px"
+                            android:gravity="center_vertical"
+                            android:text="@string/fund_url"
+                            android:textSize="42px" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:text="@={crowd.property_url}"
+                        style="@style/CustomerEditText"
+                        android:hint="@string/need_scheme"
+                        android:layout_marginTop="18px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48px"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/tipIv"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="60px"
+                            android:background="@drawable/assert_icon_describe" />
+
+                        <TextView
+                            style="@style/tipTextV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24px"
+                            android:gravity="center_vertical"
+                            android:text="@string/fund_desc"
+                            android:textSize="42px" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:text="@={crowd.property_data}"
+                        style="@style/CustomerEditText"
+                        android:layout_marginTop="18px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48px"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/tipIv"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="60px"
+                            android:background="@drawable/assert_icon_precision" />
+
+                        <TextView
+                            style="@style/tipTextV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24px"
+                            android:gravity="center_vertical"
+                            android:text="@string/precision"
+                            android:textSize="42px" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/spinnerPrec"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="60px"
+                        android:layout_marginLeft="60px"
+                        android:layout_height="144px"
+                        android:layout_marginTop="10px"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48px"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/tipIv"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="60px"
+                            android:background="@drawable/main_icon_miner_fee" />
+
+                        <TextView
+                            style="@style/tipTextV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24px"
+                            android:gravity="center_vertical"
+                            android:text="@string/miner_fee"
+                            android:textSize="42px" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:inputType="numberDecimal"
+                        android:id="@+id/feeEt"
+                        android:text="@={Converters.convertFloatToString(crowd.fee)}"
+                        style="@style/CustomerEditText"
+                        android:layout_marginTop="18px" />
+                </LinearLayout>
+
+                <whc.com.whc_wallet.view.MinerFeeView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"></whc.com.whc_wallet.view.MinerFeeView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48px"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/tipIv"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="60px"
+                            android:background="@drawable/assert_icon_charge" />
+
+                        <TextView
+                            style="@style/tipTextV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24px"
+                            android:gravity="center_vertical"
+                            android:text="@string/fee"
+                            android:textSize="42px" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_below="@+id/inputParentLy"
+                android:id="@+id/confirmBtn"
+                style="@style/normalBtn"
+                android:layout_marginTop="83px"
+                android:layout_marginBottom="50px"
+                android:text="@string/confirm" />
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>

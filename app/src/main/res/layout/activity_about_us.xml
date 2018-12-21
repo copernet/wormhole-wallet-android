@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="whc.com.whc_wallet.SplashActivity">
+
+    <ImageView
+        android:layout_width="223px"
+        android:layout_height="223px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="365px"
+        android:background="@drawable/lertme_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600px"
+        android:text="Wormhole Wallet"
+        android:textColor="#4A4A4A"
+        android:textSize="60px" />
+
+    <TextView
+        android:id="@+id/currentVerionTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="696px"
+        android:gravity="center"
+        android:textColor="#A6AEBC"
+        android:textSize="32px"
+        tools:text="0.1.25" />
+
+    <LinearLayout
+        android:id="@+id/checkUpdateLy"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:layout_marginRight="@dimen/normal_padding"
+        android:layout_marginTop="800px"
+        android:background="@drawable/white_bg_card"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:text="@string/update_version"
+            android:textSize="38px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/verionTipTv"
+                android:layout_gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:text="@string/is_newest_version_now"
+                android:textColor="#A6AEBC"
+                android:textSize="32px" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

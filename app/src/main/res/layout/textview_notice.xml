@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="whc.com.whc_wallet.SplashActivity">
+    <TextView
+        android:id="@+id/noticeTv"
+        android:layout_marginLeft="42px"
+        android:layout_marginRight="42px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26px"
+        android:background="@drawable/create_gray_bg"
+        android:drawableLeft="@drawable/icons_tip"
+        android:drawablePadding="24px"
+        android:paddingLeft="20px"
+        android:gravity="center_vertical"
+        tools:text="禁止截屏，并注意周围是否有摄像头"
+        android:textColor="#8A94A6"
+         />
+</RelativeLayout>
+
+

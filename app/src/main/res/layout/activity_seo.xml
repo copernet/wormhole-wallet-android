@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="whc.com.whc_wallet.util.Converters" />
+        <variable name="operateFund" type="wormhole.net.request.OpreateFund" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="whc.com.whc_wallet.SplashActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240px"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="60px"
+                    android:background="@drawable/assert_icon_number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24px"
+                    android:gravity="center_vertical"
+                    android:text="@string/air_seo_amount"
+                    android:textSize="42px" />
+            </LinearLayout>
+
+            <EditText
+                style="@style/CustomerEditText"
+                android:text="@={operateFund.amount}"
+                android:layout_marginTop="18px" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48px"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/tipIv"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="60px"
+                    android:background="@drawable/main_icon_miner_fee" />
+
+                <TextView
+                    style="@style/tipTextV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24px"
+                    android:gravity="center_vertical"
+                    android:text="@string/miner_fee"
+                    android:textSize="42px" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/feeEt"
+                android:inputType="numberDecimal"
+                android:text="@={operateFund.fee}"
+                style="@style/CustomerEditText"
+                android:layout_marginTop="18px" />
+        </LinearLayout>
+
+        <whc.com.whc_wallet.view.MinerFeeView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"></whc.com.whc_wallet.view.MinerFeeView>
+
+        <Button
+            android:id="@+id/confirmBtn"
+            style="@style/normalBtn"
+            android:layout_marginTop="241px"
+            android:text="@string/confirm" />
+    </LinearLayout>
+</layout>

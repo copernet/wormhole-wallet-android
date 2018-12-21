@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="whc.com.whc_wallet.util.Converters" />
+        <variable name="txData" type="wormhole.net.response.OwnersData"/>
+    </data>
+    <RelativeLayout
+        android:layout_width="960px"
+        android:layout_height="219px"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:layout_marginRight="@dimen/normal_padding"
+        tools:context="whc.com.whc_wallet.SplashActivity">
+
+        <TextView
+            android:layout_width="511px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48px"
+            android:ellipsize="middle"
+            android:textColor="#53627C"
+            android:textSize="48px"
+            android:singleLine="true"
+            android:text="@{txData.Address}"
+            tools:text="sdnfiaodfjha…oqwqeqw" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@{txData.balance_available}"
+            android:textColor="#0C66FF"
+            android:textSize="42px"
+            tools:text="977966" />
+
+        <TextView
+            android:id="@+id/opBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="48px"
+            android:ellipsize="middle"
+            android:textColor="#F03D3D"
+            android:textSize="48px"
+            tools:text="冻结" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="129px"
+            android:layout_marginLeft="248px"
+            android:textColor="#A6AEBC"
+            android:textSize="42px"
+            tools:text="创建众筹"
+            android:id="@+id/textView6" />
+
+
+    </RelativeLayout>
+</layout>

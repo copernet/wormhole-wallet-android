@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="whc.com.whc_wallet.NoticeCenterActivity">
+
+    <TextView
+        android:id="@+id/balanceTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="可用余额："
+        />
+
+    <TextView
+        android:id="@+id/balanceDetail"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/balanceTip"
+        />
+    <TextView
+        android:id="@+id/addrTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/balanceTip"
+        android:text="转出地址:"
+        />
+    <Button
+        android:id="@+id/scancodeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/balanceTip"
+        android:text="扫描二维码:"
+        />
+
+    <EditText
+        android:id="@+id/addrDetail"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/addrTip"
+        app:layout_constraintTop_toBottomOf="@id/balanceTip"
+        />
+
+    <TextView
+        android:id="@+id/feeTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addrDetail"
+        android:text="手续费率建议:"
+        />
+
+    <EditText
+        android:id="@+id/feeEt"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/feeTip"
+        app:layout_constraintTop_toBottomOf="@id/addrDetail"
+        />
+
+    <TextView
+        android:id="@+id/moneyTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feeEt"
+        android:text="转出金额:"
+        />
+
+    <EditText
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/moneyTip"
+        android:hint="单位BCH"
+        app:layout_constraintTop_toBottomOf="@id/feeEt"
+        />
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/money"/>
+
+</android.support.constraint.ConstraintLayout>

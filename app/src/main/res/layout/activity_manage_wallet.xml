@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="whc.com.whc_wallet.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/cardLy"
+            android:layout_width="1020px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="250px"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="219px"
+            android:layout_below="@+id/cardLy"
+            android:layout_marginTop="35px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/createBtn"
+                style="@style/halfLeftBtn"
+                android:text="@string/create_wallet" />
+
+            <Button
+                android:id="@+id/importBtn"
+                style="@style/halfRightBtn"
+                android:text="@string/import_wallet" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

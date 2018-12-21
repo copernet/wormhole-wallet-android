@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:id="@+id/feeRadioGroup"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|left"
+    android:orientation="horizontal"
+    android:layout_marginTop="42px"
+    android:paddingLeft="@dimen/normal_padding"
+    tools:context="whc.com.whc_wallet.SplashActivity">
+
+    <RadioButton
+        android:id="@+id/btn_0"
+        android:layout_width="201px"
+        android:layout_height="72px"
+        android:background="@drawable/radio"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/slow"
+        android:textColor="@android:color/white"
+        android:textSize="42px" />
+
+    <RadioButton
+        android:id="@+id/btn_1"
+        android:layout_width="201px"
+        android:layout_height="72px"
+        android:layout_marginLeft="36px"
+        android:background="@drawable/radio"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/middle"
+        android:textColor="@android:color/white"
+        android:textSize="42px" />
+
+    <RadioButton
+        android:id="@+id/btn_2"
+        android:layout_width="201px"
+        android:layout_height="72px"
+        android:layout_marginLeft="36px"
+        android:background="@drawable/radio"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/quick"
+        android:textColor="@android:color/white"
+        android:textSize="42px" />
+</RadioGroup>
+

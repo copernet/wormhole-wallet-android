@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="1080px"
+            android:layout_height="480px"
+            android:background="@drawable/my_bg">
+
+            <ImageView
+                android:layout_width="132px"
+                android:layout_height="132px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60px" />
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="242px"
+                tools:text="HAHA"
+                android:textColor="#ffffffff"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/addrTv"
+                android:layout_width="544px"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="232px"
+                android:layout_marginTop="306px"
+                android:ellipsize="middle"
+                tools:text="hhhtu16jsdjfidj…iadusoh980"
+                android:textColor="#ffffffff"
+                android:textSize="42px" />
+
+
+            <ImageView
+                android:id="@+id/qrCodeV"
+                android:layout_width="62px"
+                android:layout_height="62px"
+                android:layout_marginLeft="793px"
+                android:layout_marginTop="302px"
+                android:padding="10px"
+                android:src="@drawable/main_button_qr" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_padding"
+            android:layout_marginTop="36px"
+            android:text="@string/tx_center"
+            android:textColor="#8A94A6"
+            android:textSize="32px" />
+
+        <LinearLayout
+            android:layout_width="960px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20px"
+            android:background="@drawable/white_bg_card"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/historyLy"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40px"
+                    android:background="@drawable/my_icon_history" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="176px"
+                    android:text="@string/tx_history_no_colon" />
+
+                <ImageView
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/main_icon_next" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/my_line"
+                android:layout_width="882px"
+                android:layout_height="1px"></View>
+
+            <RelativeLayout
+                android:id="@+id/noticeCenter"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40px"
+                    android:background="@drawable/my_icon_message" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="176px"
+                    android:text="@string/notice_center" />
+
+                <ImageView
+                    android:id="@+id/redIconInMine"
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="119px"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/red_point" />
+
+                <ImageView
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/main_icon_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_padding"
+            android:layout_marginTop="36px"
+            android:text="@string/base_setting"
+            android:textColor="#8A94A6"
+            android:textSize="32px" />
+
+        <LinearLayout
+            android:layout_width="960px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20px"
+            android:background="@drawable/white_bg_card"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/languageChoooseLy"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40px"
+                    android:background="@drawable/my_icon_language" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="176px"
+                    android:text="@string/system_language" />
+
+                <ImageView
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/main_icon_next" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/my_line"
+                android:layout_width="882px"
+                android:layout_height="1px"></View>
+
+            <RelativeLayout
+                android:id="@+id/changePwdLy"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40px"
+                    android:background="@drawable/my_icon_password" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="176px"
+                    android:text="@string/change_pwd" />
+
+                <ImageView
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/main_icon_next" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_padding"
+            android:layout_marginTop="36px"
+            android:text="@string/others"
+            android:textColor="#8A94A6"
+            android:textSize="32px" />
+
+        <LinearLayout
+            android:layout_width="960px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20px"
+            android:background="@drawable/white_bg_card"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/lookSeed"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40px"
+                    android:background="@drawable/my_icon_see" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="176px"
+                    android:text="@string/look_seed" />
+
+                <ImageView
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/main_icon_next" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userAgreementLy"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40px"
+                    android:background="@drawable/my_icon_user" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="176px"
+                    android:text="@string/user_agreement" />
+
+                <ImageView
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/main_icon_next" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/my_line"
+                android:layout_width="882px"
+                android:layout_height="1px"></View>
+
+            <RelativeLayout
+                android:id="@+id/aboutUsLy"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40px"
+                    android:background="@drawable/my_icon_aboutus" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="176px"
+                    android:text="@string/about_us" />
+
+                <ImageView
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/main_icon_next" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

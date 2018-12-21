@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="whc.com.whc_wallet.util.Converters" />
+
+        <variable
+            name="notice"
+            type="wormhole.net.response.Notice" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="960px"
+        android:layout_height="246px"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:layout_marginRight="@dimen/normal_padding"
+        android:background="@drawable/white_bg_card"
+        tools:context="whc.com.whc_wallet.SplashActivity">
+
+        <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            android:background="@{notice.balance_available_credit_debit.contains(`-`) ? @drawable/my_icon_output:@drawable/my_icon_input}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="147px"
+            android:layout_marginRight="33px"
+            android:layout_marginTop="30px"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="@{notice.address}"
+            android:textColor="#A6AEBC"
+            android:textSize="42px"
+            tools:text="bitcoincash:asdfadjfafasdfasdfklsdfasdfasdfasfxzcvsdfasfd" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="147px"
+            android:layout_marginRight="@dimen/normal_padding"
+            android:layout_marginTop="150px"
+            android:text="@{Converters.convertSecondToDate(notice.timestamp)}"
+            android:textColor="#C9CED6"
+            android:textSize="28px"
+            tools:text="19小时前" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="147px"
+            android:layout_marginRight="160px"
+            android:layout_marginTop="94px"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@{`[` + notice.tx_type_name + `]`}"
+            android:textColor="#53627C"
+            android:textSize="26px"
+            tools:text="[增发资产]" />
+
+        <TextView
+            android:id="@+id/totalNumTv"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="147px"
+            android:layout_marginRight="32px"
+            android:layout_marginTop="137px"
+            android:gravity="right"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@{(null == notice.balance_available_credit_debit ? `` : notice.balance_available_credit_debit) + ` ` + notice.property_name}"
+            android:textColor="#53627C"
+            android:textSize="40px"
+            tools:text="+ 9.8889763 Token" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView5"
+            android:layout_alignRight="@+id/textView5"
+            android:layout_alignTop="@+id/textView"
+            android:background="@drawable/my_icon_number"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="42px"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+</layout>
