@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle1"
+    tools:context="whc.com.whc_wallet.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="888px"
+        android:layout_height="1375px"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="220px"
+        android:background="@drawable/main_qr_bg">
+
+        <ImageView
+            android:layout_width="540px"
+            android:layout_height="540px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="192px"
+            tools:background="@drawable/main_icon_lock" />
+
+        <TextView
+            tools:text="HAHA"
+            android:textColor="#0A1F44"
+            android:layout_marginTop="1026px"
+            android:layout_centerHorizontal="true"
+            android:textSize="60px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="544px"
+            android:layout_height="wrap_content"
+            android:text="hhhtu16jsdjfidj…iadusoh980"
+            android:layout_marginTop="1140px"
+            android:layout_marginLeft="232px"
+            android:textColor="#758196"
+            android:ellipsize="middle"
+            android:textSize="42px" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1704px"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:text="注意：\n改地址仅支持BCH收款，请勿用于其他币种！"
+        android:drawableLeft="@drawable/mian_icons_reminder"
+        android:drawablePadding="24px"
+        />
+
+</RelativeLayout>

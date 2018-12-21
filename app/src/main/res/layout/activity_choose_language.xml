@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="whc.com.whc_wallet.SplashActivity">
+
+    <RadioGroup
+        android:id="@+id/languageRadioG"
+        android:layout_marginTop="240px"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/chineseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="180px"
+            android:layout_marginRight="@dimen/normal_padding"
+            android:button="@drawable/lang_radio_button_style"
+            android:checked="true"
+            android:layoutDirection="rtl"
+            android:paddingLeft="@dimen/normal_padding"
+            android:text="简体中文" />
+
+        <RadioButton
+            android:id="@+id/englishBtn"
+            android:layout_width="match_parent"
+            android:layout_height="180px"
+            android:layout_marginRight="@dimen/normal_padding"
+            android:button="@drawable/lang_radio_button_style"
+            android:layoutDirection="rtl"
+            android:checked="true"
+            android:paddingLeft="@dimen/normal_padding"
+            android:text="English" />
+
+
+    </RadioGroup>
+
+</LinearLayout>
+
+

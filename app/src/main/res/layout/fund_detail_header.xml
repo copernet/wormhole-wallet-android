@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <import type="whc.com.whc_wallet.util.Converters" />
+        <variable name="propertyData" type="wormhole.net.response.PropertyData"/>
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/outLy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/browse_blue_bg"
+        tools:context="whc.com.whc_wallet.SplashActivity"
+        android:paddingLeft="@dimen/normal_padding"
+        android:paddingRight="@dimen/normal_padding">
+
+        <TextView
+            android:id="@+id/typeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="249px"
+            android:textColor="#ffffff"
+            android:textSize="50px"
+            android:textStyle="bold"
+            tools:text="固定资产" />
+
+        <RelativeLayout
+            android:layout_width="960px"
+            android:layout_height="wrap_content"
+            android:paddingBottom="40px"
+            android:layout_marginTop="40px"
+            android:background="@drawable/white_bg_card">
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="54px"
+                android:textColor="#0A1F44"
+                android:textSize="63px"
+                android:text="@{propertyData.name}"
+                tools:text="Melody" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/nameTv"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@id/nameTv"
+                android:textColor="#8A94A6"
+                android:textSize="40px"
+                android:text="@{`(id:` + propertyData.propertyid + `)`}"
+                tools:text="(id:123)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nameTv"
+                android:layout_alignStart="@+id/nameTv"
+                android:layout_below="@+id/nameTv"
+                android:text="@{propertyData.data}"
+                android:textColor="#8a94a6"
+                tools:text="MAdfidf（符号XUR）是一种新的加密货币，" />
+
+            <TextView
+                android:id="@+id/urlTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="@dimen/normal_padding"
+                android:text="@{propertyData.url}"
+                android:textColor="#0c66ff"
+                android:singleLine="true"
+                android:layout_marginTop="276px"
+                tools:text="http://adf.com" />
+
+
+            <TextView
+                android:id="@+id/publishAddrTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="386px"
+                android:text="@string/publish_addr"
+                android:textColor="#182C4F"
+                android:textSize="36px" />
+
+            <TextView
+                style="@style/showOnlyTv"
+                android:layout_width="880px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="450px"
+                android:singleLine="true"
+                android:text="@{propertyData.issuer}"
+                tools:text="bchtest:qz04wg2jj75x34tge2v8w0l6r0repfcvcygv3t7sg5" />
+
+            <LinearLayout
+                android:layout_width="410px"
+                android:gravity="left"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="599px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="36px"
+                    android:text="@string/first_catogory"
+                    android:textColor="#182C4F" />
+
+                <TextView
+                    style="@style/showOnlyTv"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="24px"
+                    android:singleLine="true"
+                    android:text="@{propertyData.category}"
+                    tools:text="first_cat" />
+
+                <TextView
+                    android:textSize="36px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45px"
+                    android:text="@string/token_amount"
+                    android:textColor="#182C4F" />
+
+                <TextView
+                    style="@style/showOnlyTv"
+                    android:text="@{propertyData.totaltokens}"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="24px"
+                    tools:text="10000" />
+
+                <TextView
+                    android:textSize="36px"
+                    android:id="@+id/deadlineTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45px"
+                    android:text="@string/deadline"
+                    android:textColor="#182C4F" />
+
+                <TextView
+                    android:id="@+id/deadlineTv"
+                    style="@style/showOnlyTv"
+                    android:layout_width="match_parent"
+                    android:text="@{Converters.convertDateToString(propertyData.deadline * 1000)}"
+                    android:layout_marginTop="24px"
+                    tools:text="2018-08-05" />
+
+                <TextView
+                    android:textSize="36px"
+                    android:id="@+id/perUnitTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45px"
+                    android:text="@string/percent_whc"
+                    android:textColor="#182C4F" />
+
+                <TextView
+                    android:id="@+id/perUnitTv"
+                    style="@style/showOnlyTv"
+                    android:layout_width="match_parent"
+                    android:text="@{propertyData.tokensperunit}"
+                    android:layout_marginTop="24px"
+                    tools:text="0.001" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="410px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="599px"
+                android:layout_marginRight="40px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textSize="36px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/second_catogory"
+                    android:textColor="#182C4F" />
+
+                <TextView
+                    style="@style/showOnlyTv"
+                    android:layout_width="match_parent"
+                    android:text="@{propertyData.subcategory}"
+                    android:layout_marginTop="24px"
+                    tools:text="second_catogory" />
+
+                <TextView
+                    android:textSize="36px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45px"
+                    android:text="@string/precision"
+                    android:textColor="#182C4F" />
+
+                <TextView
+                    style="@style/showOnlyTv"
+                    android:layout_width="match_parent"
+                    android:text="@{propertyData.precision}"
+                    android:layout_marginTop="24px"
+                    tools:text="6" />
+
+                <TextView
+                    android:textSize="36px"
+                    android:id="@+id/earlyBonusTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45px"
+                    android:text="@string/early_bonus"
+                    android:textColor="#182C4F" />
+
+                <TextView
+                    android:id="@+id/earlyBonusTv"
+                    style="@style/showOnlyTv"
+                    android:layout_width="match_parent"
+                    android:text="@{Converters.convertFloatToString(propertyData.earlybonus)}"
+                    android:layout_marginTop="24px"
+                    tools:text="10%" />
+
+                <TextView
+                    android:id="@+id/soldTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45px"
+                    android:text="@string/token_sold"
+                    android:textColor="#182C4F" />
+
+                <TextView
+                    android:id="@+id/soldTv"
+                    style="@style/showOnlyTv"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="24px"
+                    android:text="@{`` + propertyData.purchasedtokens}"
+                    tools:text="8000" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/joinCrowdBtn"
+            style="@style/normalBtn"
+            android:layout_marginTop="50px"
+            android:text="@string/join_crowd_no_colon"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/operateLy"
+            layout="@layout/option_layout"
+            android:layout_width="960px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_marginTop="55px"
+            android:layout_marginBottom="30px"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/tipIv"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/main_icon_history" />
+
+            <TextView
+                style="@style/tipTextV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:gravity="center_vertical"
+                android:textColor="#8a94a6"
+                android:text="@string/tx_history"
+                android:textSize="42px" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

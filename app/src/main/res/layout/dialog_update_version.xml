@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="whc.com.whc_wallet.SplashActivity">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="888px"
+        android:layout_marginTop="300px"
+        android:background="@drawable/dialog_bg"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60px"
+            android:background="@drawable/icon_update"
+            android:layout_width="256px"
+            android:layout_height="231px" />
+        
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_marginTop="316px"
+            android:text="@string/new_version_published"
+            android:textColor="#ff0a1f44"
+            android:gravity="center"
+            android:textSize="54px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/detailTv"
+                android:layout_marginTop="436px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                tools:text="12个助记词必须按正确顺序输入至框内"
+                android:drawablePadding="24px"
+                android:textColor="#8A94A6"
+                />
+
+
+            <Button
+
+                style="@style/normalBtn"
+                android:layout_below="@+id/detailTv"
+                android:layout_marginTop="90px"
+                android:text="@string/update_now"
+                />
+
+            <TextView
+                android:id="@+id/cancleBtn"
+                android:layout_width="670px"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_height="157px"
+                android:textSize="54px"
+                android:textColor="#0C66FF"
+                android:text="@string/later_say"
+                android:layout_below="@+id/confirmBtn"
+                />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

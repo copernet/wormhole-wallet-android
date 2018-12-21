@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="whc.com.whc_wallet.SplashActivity">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="372px"
+            android:background="@drawable/create_icon_complete"
+            android:layout_width="120px"
+            android:layout_height="120px" />
+        
+        <TextView
+            android:layout_marginTop="630px"
+            android:text="钱包助记词备份成功！"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:textSize="48px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_marginTop="762px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="请妥善保管您的助记\n切勿丢失或泄露给他人"
+                android:drawablePadding="24px"
+                android:textColor="#8A94A6"
+                />
+
+
+            <Button
+                style="@style/normalBtn"
+                android:layout_marginTop="1113px"
+                android:text="进入钱包"
+                />
+
+
+
+</RelativeLayout>

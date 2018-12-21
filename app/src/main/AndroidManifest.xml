@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="whc.com.whc_wallet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!--  -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="design_width" android:value="1080"></meta-data>
+        <meta-data android:name="design_height" android:value="1920"></meta-data>
+
+        <activity android:name="whc.com.whc_wallet.SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="whc.com.whc_wallet.MainActivityT"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan"
+            >
+        </activity>
+
+        <activity android:name="whc.com.whc_wallet.SendActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.ImportWalletActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.CreateFundActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.ThawActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.SeedWordShowActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.FundingDetailActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.SeedWordEnterActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.ManageWalletActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.JoinCrowdActivityT" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.CreateFixFundActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.CreateManagableActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.CreateCrowdActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.BurnActivityT" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.SeoActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.TxHistoryActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.ChooseLanguageActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.ChangePwdActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.AboutUsActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.DestroyFundActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.CloseFundActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.SendAllActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.FundHistrotyActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.ChangeOwnerActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.SendTokenActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.SeedWordLookActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.TxDetailActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.AirDropActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.PassWordActivityT" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.UserAgreementActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.PrivacyPolicyActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.CreateOrImportActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.NoticeCenterActivity" android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="whc.com.whc_wallet.MainActivity" android:theme="@style/CustomActionBarThemeNoOverlay"></activity>
+    </application>
+
+</manifest>

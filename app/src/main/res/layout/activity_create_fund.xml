@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="whc.com.whc_wallet.SplashActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/createManFundLy"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="960px"
+        android:layout_height="297px"
+        android:layout_marginTop="252px"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:layout_marginRight="@dimen/normal_padding"
+        android:background="@drawable/white_bg_card"
+        >
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_padding"
+            android:background="@drawable/asset_icon_management" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="321px"
+            android:text="@string/create_managable_fund"
+            android:textColor="#53627C"
+            android:textSize="48px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/main_icon_next" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/createFixFundLy"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="960px"
+        android:layout_height="297px"
+        android:layout_marginTop="597px"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:layout_marginRight="@dimen/normal_padding"
+        android:background="@drawable/white_bg_card"
+        >
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_padding"
+            android:background="@drawable/asset_icon_smart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="321px"
+            android:text="@string/create_fix_amount_fund"
+            android:textColor="#53627C"
+            android:textSize="48px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/main_icon_next" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/createCrowdFundLy"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="960px"
+        android:layout_height="297px"
+        android:layout_marginTop="942px"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:layout_marginRight="@dimen/normal_padding"
+        android:background="@drawable/white_bg_card"
+        >
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_padding"
+            android:background="@drawable/asset_icon_crowd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="321px"
+            android:text="@string/create_crowd_fund"
+            android:textColor="#53627C"
+            android:textSize="48px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/main_icon_next" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

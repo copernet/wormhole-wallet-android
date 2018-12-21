@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/nameV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_margin="10dp"
+            android:text="截止:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/deadlineV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="deadlineV"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintLeft_toRightOf="@id/textView2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/totalTip"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toRightOf="@id/nameV"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="token总量：" />
+
+        <TextView
+            android:id="@+id/totalV"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toRightOf="@id/totalTip"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="totalV" />
+
+        <TextView
+            android:id="@+id/issuedTip"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已购买："
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameV"
+            />
+
+        <TextView
+            android:id="@+id/issuedV"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="issuedV"
+            app:layout_constraintLeft_toRightOf="@id/issuedTip"
+            app:layout_constraintTop_toBottomOf="@id/nameV"
+            />
+
+        <TextView
+            android:id="@+id/rateTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="汇率:"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toRightOf="@id/deadlineV"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/rateV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toRightOf="@id/rateTip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

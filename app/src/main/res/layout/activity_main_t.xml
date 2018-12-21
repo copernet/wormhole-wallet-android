@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="whc.com.whc_wallet.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="666px"
+        android:background="@drawable/main_blue_bg">
+
+        <ImageView
+            android:layout_width="190px"
+            android:layout_height="190px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="140px"
+            android:background="@drawable/main_icon_photo" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="228px"
+            android:layout_marginTop="144px"
+            android:text="HAHA"
+            android:textColor="#ffffffff"
+            android:textSize="60px" />
+
+        <TextView
+            android:id="@+id/addrTv"
+            android:layout_width="544px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="232px"
+            android:layout_marginTop="228px"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="hhhtu16jsdjfidj…iadusoh980"
+            android:textColor="#ffffffff"
+            android:textSize="42px" />
+
+        <ImageView
+            android:id="@+id/qrCodeV"
+            android:layout_width="62px"
+            android:layout_height="62px"
+            android:layout_marginLeft="793px"
+            android:layout_marginTop="223px"
+            android:padding="10px"
+            android:src="@drawable/main_button_qr" />
+
+        <View
+            android:id="@+id/walletBtn"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_marginLeft="948px"
+            android:layout_marginTop="144px"
+            android:background="@drawable/main_iicon_wallet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="232px"
+            android:layout_marginTop="381px"
+            android:ellipsize="middle"
+            android:text="@string/my_balance"
+            android:textColor="#ffffffff"
+            android:textSize="60px" />
+
+        <View
+            android:id="@+id/hideBtn"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_marginLeft="504px"
+            android:layout_marginTop="381px"
+            android:background="@drawable/main_icon_open_eyes"
+            android:ellipsize="middle" />
+
+        <TextView
+            android:id="@+id/balanceNumTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="232px"
+            android:layout_marginTop="492px"
+            android:ellipsize="middle"
+            android:text="2.6"
+            android:textColor="#ffffffff"
+            android:textSize="60px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/balanceNumTv"
+            android:layout_marginLeft="7px"
+            android:layout_marginBottom="2px"
+            android:layout_toRightOf="@+id/balanceNumTv"
+            android:ellipsize="middle"
+            android:text="whc"
+            android:textColor="#ffffffff"
+            android:textSize="42px" />
+
+        <View
+            android:id="@+id/burnBtn"
+            android:layout_width="178px"
+            android:layout_height="178px"
+            android:layout_marginLeft="871px"
+            android:layout_marginTop="442px"
+            android:background="@drawable/main_button_burn_nor">
+
+        </View>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bchLy"
+        android:layout_width="960px"
+        android:layout_height="180px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="726px"
+        android:background="@drawable/main_bch_wallet"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="228px"
+            android:text="BCH"
+            android:textColor="#ffffffff"
+            android:textSize="60px" />
+
+        <TextView
+            android:id="@+id/bchBlanceNumTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:paddingRight="60px"
+            tools:text="1.3"
+            android:textColor="#ffffffff"
+            android:textSize="60px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/whcLy"
+        android:layout_width="960px"
+        android:layout_height="180px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="942px"
+        android:background="@drawable/main_whc_wallet"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="228px"
+            android:text="WHC"
+            android:textColor="#ffffffff"
+            android:textSize="60px" />
+
+        <TextView
+            android:id="@+id/whcBlanceNumTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:paddingRight="60px"
+            tools:text="10.3"
+            android:textColor="#ffffffff"
+            android:textSize="60px" />
+    </LinearLayout>
+
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1164px"></com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView>
+
+
+</RelativeLayout>

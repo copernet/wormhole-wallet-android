@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+
+def keystoreFilepath = ''
+def keystorePSW = ''
+def keystoreAlias = ''
+def keystoreAliasPSW = ''
+// default keystore file, PLZ config file path in local.properties
+def keyfile = file('s.keystore.temp')
+
+Properties properties = new Properties()
+// local.properties file in the root director
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+keystoreFilepath = properties.getProperty("keystore.path")
+
+if (keystoreFilepath) {
+    keystorePSW = properties.getProperty("keystore.password")
+    keystoreAlias = properties.getProperty("keystore.alias")
+    keystoreAliasPSW = properties.getProperty("keystore.alias_password")
+    keyfile = file(keystoreFilepath)
+}
+
+android {
+    signingConfigs {
+        config {
+            keyAlias keystoreAlias
+            keyPassword keystoreAliasPSW
+            storeFile keyfile
+            storePassword keystorePSW
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "whc.com.whc_wallet"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 3
+        versionName "0.1.1-beta"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+kapt {
+    generateStubs = true
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.zhy:autolayout:1.4.5'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    compile 'pub.devrel:easypermissions:1.0.1'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.blankj:utilcode:1.22.0'
+    compile 'cn.yipianfengye.android:zxing-library:2.2'
+    compile 'com.wuxiaolong.pullloadmorerecyclerview:library:1.1.2'
+    kapt "com.android.databinding:compiler:$android_plugin_version"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.android.support:design:26.1.0'
+    implementation project(':tabpagerindictor')
+    implementation project(':library')
+}

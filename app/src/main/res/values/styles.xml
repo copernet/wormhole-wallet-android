@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomActionBarTheme" parent="Theme.AppCompat.Light">
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+    <style name="CustomActionBarThemeNoOverlay" parent="Theme.AppCompat.Light">
+        <item name="windowActionBarOverlay">false</item>
+    </style>
+
+    <style name="CustomerEditText">
+        <item name="android:layout_marginLeft">60px</item>
+        <item name="android:layout_marginRight">60px</item>
+        <item name="android:layout_height">144px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">42px</item>
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:textCursorDrawable">@drawable/edit_cursor_color</item>
+    </style>
+
+    <style name="tipTextV">
+    </style>
+
+    <style name="tipIv">
+    </style>
+
+    <style name="normalBtn">
+        <item name="android:layout_width">670px</item>
+        <item name="android:id">@id/confirmBtn</item>
+        <item name="android:layout_height">207px</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">54px</item>
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingTop">49px</item>
+
+
+    </style>
+
+    <style name="halfLeftBtn">
+        <item name="android:layout_width">520px</item>
+        <item name="android:layout_height">189px</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/button_half_selector</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">54px</item>
+        <item name="android:layout_marginLeft">25px</item>
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:paddingTop">40px</item>
+    </style>
+
+    <style name="halfRightBtn">
+        <item name="android:layout_width">520px</item>
+        <item name="android:layout_height">189px</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/button_half_right_selector</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">54px</item>
+        <item name="android:layout_marginRight">25px</item>
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:paddingTop">40px</item>
+    </style>
+
+    <style name="showOnlyTv">
+        <item name="android:layout_height">120px</item>
+        <item name="android:textSize">36px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#F9F9F9</item>
+        <item name="android:textColor">#8A94A6</item>
+    </style>
+
+    <style name="searchBox">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">36px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/create_gray_bg</item>
+        <item name="android:textColor">#8A94A6</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:textCursorDrawable">@drawable/edit_cursor_color</item>
+        <item name="android:paddingLeft">21px</item>
+    </style>
+
+    <style name="CustomCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+</resources>

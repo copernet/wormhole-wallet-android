@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnClick"
+        android:text="查询余额" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnClick"
+        android:text="燃烧" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnClick"
+        android:text="众筹" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:onClick="onBtnClick"
+        android:layout_height="wrap_content"
+        android:text="参与众筹" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:onClick="onBtnClick"
+        android:layout_height="wrap_content"
+        android:text="众筹列表" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:onClick="onBtnClick"
+        android:layout_height="wrap_content"
+        android:text="创建可管理资产" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:onClick="onBtnClick"
+        android:layout_height="wrap_content"
+        android:text="我的资产" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:onClick="onBtnClick"
+        android:layout_height="wrap_content"
+        android:text="发送所有资产" />
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:onClick="onBtnClick"
+        android:layout_height="wrap_content"
+        android:text="历史交易记录" />
+</LinearLayout>

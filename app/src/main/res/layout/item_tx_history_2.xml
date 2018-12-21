@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="whc.com.whc_wallet.util.Converters" />
+        <variable name="historyRes" type="wormhole.net.response.HistrotyRes"/>
+    </data>
+    <RelativeLayout
+        android:layout_width="960px"
+        android:layout_height="219px"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:layout_marginRight="@dimen/normal_padding"
+        tools:context="whc.com.whc_wallet.SplashActivity">
+
+        <TextView
+            android:layout_width="511px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48px"
+            android:ellipsize="middle"
+            android:textColor="#53627C"
+            android:textSize="48px"
+            android:singleLine="true"
+            android:text="@{historyRes.property_name}"
+            tools:text="sdnfiaodfjha…oqwqeqw" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="129px"
+            android:textColor="#A6AEBC"
+            android:text="@{Converters.convertSecondToDate(historyRes.created)}"
+            android:textSize="42px"
+            tools:text="2018-08-08" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="48px"
+            android:ellipsize="middle"
+            android:textColor="@{historyRes.balance_available_credit_debit.contains(`-`) ? @color/out_money:@color/in_money}"
+            android:text="@{`` + (null == historyRes.balance_available_credit_debit ? `` : historyRes.balance_available_credit_debit)}"
+            android:textSize="48px"
+            tools:text="77889" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="129px"
+            android:textColor="#A6AEBC"
+            android:textSize="42px"
+            android:text="@{historyRes.tx_state}"
+            tools:text="创建众筹" />
+
+
+    </RelativeLayout>
+</layout>

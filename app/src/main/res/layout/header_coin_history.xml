@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="whc.com.whc_wallet.util.Converters" />
+        <variable
+            name="balance"
+            type="wormhole.net.response.Balance" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="whc.com.whc_wallet.SplashActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="228px"
+            android:layout_marginTop="237px"
+            android:textColor="#0A1F44"
+            android:textSize="60px"
+            android:text="@{`` + balance.balance_available}"
+            tools:text="1.23" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60px"-->
+            <!--android:layout_marginTop="942px"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="@dimen/normal_padding">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/nameIv"-->
+                <!--android:layout_width="60px"-->
+                <!--android:layout_height="60px"-->
+                <!--android:background="@drawable/main_icon_pre_address" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="24px"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="@string/current_addr"-->
+                <!--android:textSize="42px" />-->
+        <!--</LinearLayout>-->
+
+        <!--<include-->
+            <!--layout="@layout/textview_addr_show"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="1026px"></include>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_marginTop="331px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/normal_padding">
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:background="@drawable/main_icon_history" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:gravity="center_vertical"
+                android:text="@string/history_record"
+                android:textSize="42px" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

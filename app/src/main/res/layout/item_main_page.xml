@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable name="balance" type="wormhole.net.response.Balance"/>
+    </data>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="180px"
+        android:paddingLeft="@dimen/normal_padding"
+        android:paddingRight="@dimen/normal_padding"
+        tools:context="whc.com.whc_wallet.SplashActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="48px"
+            android:text="@{balance.property_name}"
+            tools:text="FirstToken" />
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="108px"
+            android:textSize="48px"
+            android:text="@{balance.showBalance ? String.valueOf(balance.balance_available) : `***`}"
+            tools:text="9.456" />
+
+        <ImageView
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/main_icon_next" />
+
+
+    </RelativeLayout>
+</layout>

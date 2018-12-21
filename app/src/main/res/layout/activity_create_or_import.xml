@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="whc.com.whc_wallet.SplashActivity">
+
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/create_or_import_bg"
+         />
+
+    <Button
+        android:id="@+id/createBtn"
+        android:layout_marginTop="904px"
+        android:layout_width="840px"
+        android:layout_height="400px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/create_wallet"
+         />
+
+    <Button
+        android:id="@+id/importBtn"
+        android:layout_marginTop="1348px"
+        android:layout_width="840px"
+        android:layout_height="400px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_wallet"
+         />
+
+
+
+
+</RelativeLayout>

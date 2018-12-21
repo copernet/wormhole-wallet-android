@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="whc.com.whc_wallet.SplashActivity">
+
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:id="@+id/overview_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="240px"
+        ></com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="219px"
+        android:paddingTop="30px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/recieveBtn"
+            style="@style/halfLeftBtn"
+            android:text="@string/recieve" />
+
+        <Button
+            android:id="@+id/sendBtn"
+            style="@style/halfRightBtn"
+            android:text="@string/send" />
+    </LinearLayout>
+
+</RelativeLayout>

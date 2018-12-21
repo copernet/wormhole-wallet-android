@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="main_bottom_tab_textcolor_normal">#758196</color>
+    <color name="main_bottom_tab_textcolor_selected">@color/normal_color</color>
+
+    <color name="pager_tab_nor">#A6AEBC</color>
+    <color name="pager_tab_sel">#0C66FF</color>
+
+
+    <color name="normal_color">#0C66FF</color>
+    <color name="out_money">#F03D3D</color>
+    <color name="in_money">#22C993</color>
+</resources>

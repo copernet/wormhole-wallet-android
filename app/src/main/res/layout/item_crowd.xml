@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="whc.com.whc_wallet.util.Converters" />
+        <variable name="propertyData" type="wormhole.net.response.PropertyData"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="960px"
+        android:layout_height="330px"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:layout_marginRight="@dimen/normal_padding"
+        android:background="@drawable/white_bg_card"
+        tools:context="whc.com.whc_wallet.SplashActivity">
+
+        <ImageView
+            android:id="@+id/typeIcon"
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:layout_margin="40px"
+            android:background="@drawable/browse_icon_crowd" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="102px"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160px"
+            android:layout_marginTop="64px"
+            android:textColor="#53627C"
+            android:singleLine="true"
+            android:textSize="48px"
+            android:textStyle="bold"
+            android:text="@{propertyData.name}"
+            tools:text="Melody" />
+
+        <TextView
+            android:id="@+id/idTv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/nameTv"
+            android:layout_marginLeft="16px"
+            android:layout_toRightOf="@id/nameTv"
+            android:textColor="#A6AEBC"
+            android:text="@{`(id:` + propertyData.propertyid + `)`}"
+            tools:text="(id:123)" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/tokenTv"-->
+            <!--android:singleLine="true"-->
+            <!--android:layout_width="390px"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginLeft="16px"-->
+            <!--android:layout_marginTop="70px"-->
+            <!--android:textColor="#53627C"-->
+            <!--android:gravity="right"-->
+            <!--android:ellipsize="end"-->
+            <!--android:textSize="48px"-->
+            <!--android:text="@{`token总量:` + propertyData.totaltokens}"-->
+            <!--tools:text="token总量:123456" />-->
+
+        <TextView
+            android:id="@+id/tokenCatagoryTv"
+            android:singleLine="true"
+            android:layout_width="390px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16px"
+            android:layout_marginTop="70px"
+            android:layout_marginRight="40px"
+            android:textColor="#53627C"
+            android:gravity="right"
+            android:ellipsize="end"
+            android:textSize="38px"
+            tools:text="Managable" />
+
+        <TextView
+            android:id="@+id/amountTipTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32px"
+            android:layout_marginTop="165px"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxLines="3"
+            android:layout_marginLeft="40px"
+            android:textColor="#8A94A6"
+            android:text="Token Amount:"
+            />
+
+        <TextView
+            android:layout_toRightOf="@+id/amountTipTv"
+            android:layout_width="580px"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:layout_marginTop="159px"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxLines="3"
+            android:layout_marginLeft="10px"
+            android:textColor="#C9CED6"
+            android:text="@{propertyData.totaltokens}"
+            tools:text="1212545" />
+
+        <TextView
+            android:id="@+id/issuedTipTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32px"
+            android:layout_marginTop="224px"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxLines="3"
+            android:layout_marginLeft="40px"
+            android:textColor="#8A94A6"
+            android:text="Purchase Tokens:"
+            />
+
+        <TextView
+            android:layout_toRightOf="@+id/issuedTipTv"
+            android:layout_width="340px"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:layout_marginTop="221px"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginLeft="10px"
+            android:textColor="#C9CED6"
+            android:text="@{`` + propertyData.purchasedtokens}"
+            tools:text="1212545fasdfasdfjaslkdjffasldkjfkasdjfk" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="32px"
+            android:layout_marginTop="224px"
+            android:ellipsize="end"
+            android:layout_marginRight="40px"
+            android:singleLine="true"
+            android:textColor="#F03D3D"
+            android:text="@{Converters.convertSecondToDate(propertyData.deadline)}"
+            tools:text="2018/02/02" />
+
+    </RelativeLayout>
+</layout>

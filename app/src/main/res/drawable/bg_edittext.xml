@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="960px" android:height="144px" android:state_window_focused="false">
+        <shape android:shape="rectangle">
+            <stroke android:width="3px" android:color="#ffe1e4e8" />
+            <corners android:radius="12px" />
+        </shape>
+    </item>
+    <item android:width="960px" android:height="144px" android:state_focused="true"
+        android:drawable="@drawable/create_border_selected">
+    </item>
+
+</selector>
